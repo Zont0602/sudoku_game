@@ -25,7 +25,7 @@
                     {% endif %}
 
                     <div class="box" style="{{x + y}}">
-                        <div class="number" id="number-{{i}}{{j}}"></div>
+                        <div class="number" id="number-{{i}}{{j}}">{{board[i][j] if board}}</div>
 
                         <input class="number" id="input-{{i}}{{j}}" type="text" onchange=
                         "document.getElementById('number-{{i}}{{j}}').innerHTML=document.
@@ -34,7 +34,9 @@
                  {% endfor %}
             {% endfor %}
         </div>
-        <div class="btn-wrapper"></div>
+        <div class="btn-wrapper">
+            <div class="generate" onclick="window.location='/?generate=1'"> GENERATE </div>
+        </div>
     </div>
   </body>
 </html>
