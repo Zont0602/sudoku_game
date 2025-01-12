@@ -42,7 +42,7 @@
     text-align: center;
 }
 
-.generate {
+.generate, .solve {
     text-align: center;
     border: 5px solid rgb(251, 252, 251);
     background-color:  rgb(15, 11, 240);
@@ -51,4 +51,9 @@
     margin-top: 20vh;
     cursor: pointer;
     font-size: 150%;
+}
+
+.hidden {
+    position: fixed;
+    color: white;
 }
